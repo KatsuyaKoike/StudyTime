@@ -314,4 +314,5 @@ yarn-debug.log*
 
 
 # 追加
+ruby
 environments/db.env
