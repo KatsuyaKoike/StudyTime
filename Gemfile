@@ -51,3 +51,13 @@ group :development do
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
 end
+
+group :development, :test do
+  gem 'factory_bot_rails'       # テストデータ作成
+  gem 'rspec-rails'             # テスティングフレームワーク
+end
+
+group :test do
+  gem 'capybara'                # E2Eテスト用、ブラウザ操作をシミュレート
+  gem 'webdrivers'
+end
